@@ -24,9 +24,11 @@ def search_price():
         driver.get('https://www.google.com/search?q=' + financial_asset[0] + chosen_currency[0] + 'price')
         driver.find_element_by_xpath('/html/body/div[3]/div[3]/span/div/div/div/div[3]/button[2]/div').click()
         value = driver.find_element_by_class_name('pclqee').text
-        print(value)
+        return(value)
 
-search_price()
+btc_price_eur = search_price()
+print(btc_price_eur)
+
 
 time.sleep(2)
 driver.quit()
