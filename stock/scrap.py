@@ -11,9 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 import os
 import time
 
+# C:/Users/kamil/OneDrive/Pulpit/Stock/StockPrices
+# D:/Users/kk/Pulpit/Stock/Scrapper
 
-os.environ['PATH'] += r"D:/Users/kk/Pulpit/Stock/Scrapper"
-driver = webdriver.Chrome()
+# os.environ['PATH'] += r"C:/Users/kamil/OneDrive/Pulpit/Stock"
+driver = webdriver.Chrome("C:/Users/kamil/OneDrive/Pulpit/Stock/chromedriver.exe")
+# driver = webdriver.Chrome()
 
 financial_asset = ['BTC', 'ETH']
 chosen_currency = ['EUR', 'USD', 'PLN']
